@@ -1,0 +1,764 @@
+
+
+.swiper-home-wrapper img { width:100%; vertical-align: top} /* 수정 18-07-25 */
+.swiper-home-wrapper .txt { position:absolute; left:0; bottom:47px; width:100%; text-align:center; z-index:2; } /* 수정 18-07-25 */
+.swiper-home-wrapper .txt dl { padding:0 20px;}
+.swiper-home-wrapper .txt dt { padding-bottom:5px; font-family:Georgia; font-size:23px; color:#fff; }
+.swiper-home-wrapper .txt dd { padding-bottom:18px; font-size:16px; color:#fff; font-weight:bold;   font-family: 'Noto Sans Korean'; }
+.swiper-home-wrapper .btn { display:block; width:107px; height:33px; font-family:Georgia; font-size:15px; font-style: italic; margin:0 auto; line-height:33px; text-align:center; color:#fff; background:#d50000; }
+.swiper-home-pagination { position:absolute; left:0; bottom:30px !important; text-align:center; z-index:1;}
+.swiper-home-pagination .swiper-pagination-bullet { width:20px; height:3px; margin:0 2px !important; border-radius: 1px; background:#fff; opacity:1;}
+.swiper-home-pagination .swiper-pagination-bullet-active { background:#d50000; }
+
+.wrap-qna .title { color:#343434; border-bottom:1px solid #bbb; }
+.wrap-qna .btn { overflow:hidden; }
+.wrap-qna .btn span { float:left; }
+.wrap-qna .btn a { display:block; text-align:center; bordeR:1px solid #f44337; color:#f44337; background:#fff; }
+.wrap-qna .btn .active a { display:block; text-align:center; color:#fff; bordeR:1px solid #f44337; background:#f44337; }
+.wrap-qna dl { border-bottom:1px solid #bbb; }
+.wrap-qna dt a { color:#000; }
+.wrap-qna dd { display:none; color:#bbb; border-top:1px solid #bbb; }
+
+.wrap-photo-state .title { color:#343434;  }
+.wrap-photo-state li { position:relative; border-bottom:1px solid #cacaca; }
+.wrap-photo-state dt {color:#000; }
+.wrap-photo-state dd { color:#5c5c5c; }
+.wrap-photo-state .bar { display:inline-block; vertical-align: middle; }
+.wrap-photo-state .state { position:absolute; right:0; top:0; }
+.wrap-photo-state .state span { display:block; }
+.wrap-photo-state .state img { vertical-align: middle; }
+.wrap-photo-state .state .state1 {  color:#5d5454;  }
+.wrap-photo-state .state .state0,
+.wrap-photo-state .state .state2 {  color:#f44336;  }
+.wrap-photo-state .state .state3 {  color:#000000;  }
+.wrap-photo-state .btn-img-download { display:inline-block; text-align:center; color:#fff; background:#f44336; }
+
+.wrap-pickup-state .thumb { position:absolute; left:0; top:0; }
+.wrap-pickup-state li { position:relative; border-bottom:1px solid #cacaca; color:#5c5c5c; }
+.wrap-pickup-state strong { color:#000; }
+
+.list-pickup-state2 h3 { color:#343434; border-bottom:1px solid #bbb; }
+.list-pickup-state2 .box-pickup-info { position:relative; border:1px solid #000;}
+.list-pickup-state2 .info span { color:#848484; }
+.list-pickup-state2 .info .brand,
+.list-pickup-state2 .info .date { color:#000; }
+.list-pickup-state2 .info .bar { display:inline-block; vertical-align:middle;  }
+.list-pickup-state2 .layer { position:absolute; border:1px solid #cbcbcb; background:#e6e6e6; }
+.list-pickup-state2 .layer .btn-save { display:inline-block; background:#f44336; color:#fff; }
+.list-pickup-state2 .box-pickup-info .btn { position:absolute; }
+.list-pickup-state2 .box-pickup-info .btn1 { display:inline-block;  background:#f44336; color:#fff; }
+.list-pickup-state2 .box-pickup-info .btn2 {  display:inline-block; background:#959595; color:#fff; }
+.list-pickup-state2 .content-table-1 table { width:100%; }
+.list-pickup-state2 .btn-pickup-bottom a { display:inline-block; text-align:center; background:#f44336; color:#fff; }
+
+.list-pickup-state2 .title-deposit { position:relative; overflow:hidden; border-bottom:1px solid #bbb; }
+.list-pickup-state2 .title-deposit h3 {  float:left; color:#343434; }
+.list-pickup-state2 .title-deposit .price { float:right; text-align:right; color:#6a6a6a; }
+.list-pickup-state2 .title-deposit .price strong { color:#f44336; font-family: Arial;}
+
+.list-pickup-state4 .box-pickup-info .no { text-decoration: underline; font-style:normal;}
+
+.wrap-partner-state .checkbox label em { font-style:normal; color:#f44336 }
+.wrap-partner-state .checkbox label { color:#717171; }
+.wrap-partner-state .list { border-top:1px solid #cacaca;  }
+.wrap-partner-state .list li { position:relative; border-bottom:1px solid #cacaca;  }
+.wrap-partner-state .list dt { color:#000; }
+.wrap-partner-state .list dd { color:#5c5c5c; }
+.wrap-partner-state .list .bar { display:inline-block; vertical-align: top; }
+.wrap-partner-state .list .checkbox { position:absolute; }
+.wrap-partner-state .list .thumb { position:absolute; top:50%; }
+.wrap-partner-state .list .btn { position:absolute; right:0; top:0; }
+
+.wrap-deposit .title { position:relative; overflow:hidden; border-bottom:1px solid #bbb; }
+.wrap-deposit .title h3 {  float:left; color:#343434; }
+.wrap-deposit .title .price { float:right; text-align:right; color:#6a6a6a; }
+.wrap-deposit .title .price strong { color:#f44336; font-family: Arial;}
+.wrap-deposit .deposit-price { text-align:right; color:#717171;  }
+.wrap-deposit .deposit-price strong { color:#717171; font-family: Arial;}
+.wrap-deposit table { width:100%; border-collapse: collapse; border-spacing: 0; }
+.wrap-deposit th { color:#f44336; border-top:1px solid #f44336; border-bottom:1px solid #f44336; background:#ffeade;}
+.wrap-deposit th.date { border-left:1px solid #f44336;}
+.wrap-deposit th.total { border-right:1px solid #f44336;}
+.wrap-deposit td { text-align:center; color:#000; border-bottom:1px solid #cacaca;}
+.wrap-deposit .paging { text-align:center; }
+.wrap-deposit .paging a { display:inline-block; color:#000; }
+.wrap-deposit .paging a.on { color:#fff; background:#f44336; }
+.wrap-deposit .btn-bottom { text-align:center; }
+.wrap-deposit .btn-bottom a  { display:inline-block; color:#fff; background:#f44336; }
+.wrap-deposit .guide { padding:0 10px; text-align:center; color:#626262; }
+.wrap-deposit .guide em { text-align:center; color:#626262; font-style: normal; color:#f44336; text-decoration: underline;}
+
+.wrap-alarm .title { color:#343434; border-bottom:1px solid #bbb; margin-top:15px; padding:10px }
+.wrap-alarm .box { position:relative; border:1px solid #bbb; margin-top:15px; padding:10px }
+.wrap-alarm .box.on { border-color:#f44336; }
+.wrap-alarm .state { position:absolute; right:0; top:0; color:#969696 }
+.wrap-alarm .on .state { color:#f44336; }
+.wrap-alarm dl { color:#6b6b6b; }
+.wrap-alarm dt em { color:#000; font-style: normal; }
+
+.wrap-pickup-partner .search-pickup-partner {}
+.wrap-pickup-partner .search-pickup-partner label { color:#5c5c5c; }
+.wrap-pickup-partner .search-pickup-partner em { color:#f44336; font-style: normal;  }
+
+.list-pickup-partner .top-brand-info { position:relative; }
+.list-pickup-partner .top-brand-info .thumb { position:absolute; }
+.list-pickup-partner .top-brand-info dt { color:#000; }
+.list-pickup-partner .top-brand-info dd { color:#5c5c5c; }
+.list-pickup-partner .top-brand-info .bar { display:inline-block; vertical-align: middle; }
+.list-pickup-partner .top-brand-info .thumb { position:absolute; }
+.list-pickup-partner .top-brand-info .state { position:absolute; right:0; display:inline-block; background:#ffeade; color:#f44336; }
+.list-pickup-partner .top-brand-info .btn { position:absolute; right:0; background:#f44a3d; color:#fff; border:0; }
+.list-pickup-partner .top-brand-info .btn-pickup {border:1px solid #f44a3d; color:#f44336; background:#fff; }
+
+.list-pickup-partner .table-wrap table { width:100%; }
+.list-pickup-partner .table-wrap .btns button{  background:#f44a3d; color:#fff; border:0; }
+.list-pickup-partner .btn-partner { position:relative; text-align:right; }
+.list-pickup-partner .btn-partner button { border:0; text-align:center; text-align:right; background:#f44a3d; color:#fff; }
+
+.wrap-pickup-form .title { position:relative; border-bottom:1px solid #bbb; }
+.wrap-pickup-form .title h3 { color:#343434 }
+.wrap-pickup-form .info strong { color:#000;  }
+.wrap-pickup-form .info p { color:#6a6a6a; }
+.wrap-pickup-form .info .bar { color:#000; display:inline-block; vertical-align: middle; }
+.wrap-pickup-form textarea {  resize: none; width:100%; border:1px solid #bbb; }
+.wrap-pickup-form .box-radio { overflow:hidden; background:#e6e6e6; border:1px solid #c1c1c1; }
+.wrap-pickup-form .box-radio label { color:#000; }
+.wrap-pickup-form .box-radio label em { font-style: normal; color:#f44a3d; border-bottom:1px solid #f44a3d; }
+.wrap-pickup-form .btn-bottom { text-align:center; }
+.wrap-pickup-form .btn-bottom button,
+.wrap-pickup-form .box-radio .btn { border:0; color:#fff; background:#f44a3d}
+
+
+.wrap-photo-state .title { color:#343434;  }
+
+/* 수정 18-07-30 */
+.header-search-top { position:relative; padding:12px 13px 11px 6.1%; background:#f44336; }
+.header-search-top .content-search { margin-bottom:0; background:#fff; }
+.header-search-top .btn-back { position:absolute; left:8px; top:50%; width:6%; margin:-15px 0 0 -8px; height:30px; border:0; background:url('../img/common/btn_back.png') center no-repeat; }
+.header-search-top .btn-back span { display:none; }
+
+
+.wrap-main-list-new {  padding-bottom:42px; }
+
+.search-filter { margin-top:-1px; }
+.search-filter h2 { height:35px; line-height:35px; padding-left:30px; font-size:13px; color:#fff; background:#ffb18f url('../img/common/ico_search_tit.png') 15px center no-repeat;  }
+.search-filter .wrap-sort {position:relative; text-align:right; padding:7px 8px; }
+.search-filter .wrap-sort .btn { padding:0 4px;  height:21px; font-size:11px; color:#a4a4a4; border:1px solid #bebebe; background: #fff;}
+.search-filter .wrap-sort .btn-active { color:#fff; border-color:#f44337; background: #f44337; }
+.search-filter .wrap-sort .btn-price-layer { color:#000; border-color:#000; }
+.search-filter .wrap-sort .total {position:absolute; left:0; top:0; text-align:left;  padding:7px 0 7px 34px; height:23px; line-height:23px; color:#b2b2b2; font-size:11px; background:url('../img/common/ico_total.png') 13px center no-repeat;  }
+
+.wrap-main-list-new .obj-product a { border-radius: 10px; overflow: hidden; }
+.main-search { position:relative; padding:13px 15px 0px 15px; margin-bottom:-16px; }
+.main-search .content-search { margin-bottom:0; background:#fff;
+  -webkit-box-shadow: 1px 2px 0px 0px rgba(222, 222, 222, 1);
+  -moz-box-shadow: 1px 2px 0px 0px rgba(222, 222, 222, 1);
+  box-shadow: 1px 2px 0px 0px rgba(222, 222, 222, 1);
+}
+
+.list-product-search .list-product .obj-product { width:33.3%; }
+.list-product-search .list-product .obj-product a {  border-radius: 0; text-align: center; }
+.list-product-search .list-product .obj-product .name { margin-bottom:0px; }
+
+.layer-price-filter { position: fixed; left:0; bottom:0; width:100%; display:none; box-sizing: border-box; padding:25px 16px; background:#fff; }
+.layer-price-filter dt { font-size:17px; text-align:center; margin-bottom:3px;}
+.layer-price-filter dd { font-size:11px;  text-align:center; color:#8f8f8f; }
+.layer-price-filter .price { padding:12px; text-align:center; font-size:17px; color:#f44336;}
+.layer-price-filter .btns { overflow:hidden; }
+.layer-price-filter .btns .btn { height:36px; border:0; width:48%; text-align:center; color:#4a4a4a; font-size:14px; background: #dadada; }
+.layer-price-filter .btns .btn-save { float:right; background:#f44336; color:#fff; }
+.layer-price-filter .range { position:relative; padding:6px 18px; height:10px; margin-bottom:17px; overflow: hidden; background:#dedede }
+.layer-price-filter .range .bar { display:inline-block; height:10px; background:#f44337; vertical-align: top; }
+.layer-price-filter .range .btn { position:absolute; top:0; border:0; width:18px; height:22px;  }
+.layer-price-filter .range .btn-plus {left:0;  background:#b2b2b2 url('../img/common/ico_plus.png') center no-repeat;   }
+.layer-price-filter .range .btn-minus {right:0; background:#b2b2b2 url('../img/common/ico_minus.png') center no-repeat;  }
+/* //수정 18-07-30 */
+
+/*-----------------------------------------
+            @media - mobile
+-------------------------------------------*/
+@media all and (max-width:798px)  {
+  .main { padding-top:55px; }
+  .main-search-list  { padding-top:0; }
+  .main-search-list .header { display:none; }
+
+  .swiper-home-wrapper .mobile { position:relative; display:block; } /* 수정 18-07-25 */
+  .swiper-home-wrapper .mobile:after  {  position:absolute; left:0; top:0; width:100%; height:100%; display:block; content:''; background:url('../img/common/bg_main_m.png') repeat-x; background-size:auto 100%; } /* 수정 18-07-25 */
+  .swiper-home-wrapper .pc { display:none; }
+
+
+  .list-talk-pick { overflow: hidden; }
+  .list-talk-pick .tit { padding:28px 0 3px 0; text-align:center; font-family:Georgia; font-size:18px; font-style: italic; font-weight: normal; color:#000; }
+  .list-talk-pick .tit em { color:#d50000; font-family:Georgia; }
+  .list-talk-pick .obj-product { width:33.3%; padding:10px 5px; overflow:hidden; box-sizing: border-box;}
+
+  .list-product-main .obj-product { width:50%; padding:10px 5px; box-sizing: border-box; }
+  .list-product-main .obj-product .state .txt { width:50%; }
+
+
+  .wrap-delivery { position:relative; }
+  .wrap-delivery .inner h2,
+  /*.wrap-delivery .tab-btns { display:none; }*/
+
+  /* 모바일 추가 [andy] */
+  .wrap-delivery .inner { width:900px; margin:0 auto; padding:70px 0 400px 0; }
+  .wrap-delivery .inner .tab-btns a { float:left; width:220px; height:52px; line-height:52px; text-align:center; font-size:21px; color:#616161; margin-left:5px; border:1px solid #f44336; }
+  .wrap-delivery .inner .tab-btns a:first-child { margin-left:0; }
+  .wrap-delivery .inner .tab-btns .active { background:#f44336; color:#fff; }
+  /* 모바일 추가 [andy] */
+
+  .wrap-delivery .pcikup-content-main { padding:153px 0 196px 0; text-align:center;}
+  .wrap-delivery .pcikup-content-main .img img { width:100px; height:100px; }
+  .wrap-delivery .pcikup-content-main .txt { font-size:16px; color:#f44336; padding:12px 0 48px 0;  line-height:1.4; }
+
+  .wrap-delivery .pcikup-content-main .txt strong { font-size:20px; font-weight:normal; }
+  .wrap-delivery .pcikup-content-main .btn { display:none; }
+  .wrap-delivery .btn-quick-pickup { position:fixed; right:10px; bottom:20px; display:block; } /* 수정 18-07-25 */
+  .wrap-delivery .btn-quick-pickup img { width:42px; height:42px; }
+
+  .wrap-qna { padding:25px 20px; }
+  .wrap-qna .title { padding:5px; margin-bottom:15px; font-size:16px; }
+  .wrap-qna .btn { margin:0 -1px 16px -1px; width:100% }
+  .wrap-qna .btn span { width:25%; padding:0 1px; box-sizing: border-box; }
+  .wrap-qna .btn a { font-size:12px; height:31px; line-height:31px; }
+  .wrap-qna .btn .active a { display:block; text-align:center; color:#fff; bordeR:1px solid #f44337; background:#f44337; }
+  .wrap-qna dl { border-bottom:1px solid #bbb; }
+  .wrap-qna dt a { display:block; padding:15px 8px; font-size:12px; }
+  .wrap-qna dd { padding:14px 11px; color:#7d7d7d; font-size:12px; line-height:1.4; }
+
+
+  .wrap-photo-state { padding:0 0 180px 0;  }
+  .wrap-photo-state .title {  display:none;  }
+  .wrap-photo-state .content-search { margin:0 30px; }
+  .wrap-photo-state .list { padding:7px 30px 0 30px;}
+  .wrap-photo-state li { padding:10px 120px 10px 0;}
+  .wrap-photo-state dt { margin-bottom:11px; font-size:12px; }
+  .wrap-photo-state dd { font-size:12px;  }
+  .wrap-photo-state .bar { margin:0 8px; font-size:8px; vertical-align:top; margin-top:4px; }
+  .wrap-photo-state .state { padding:10px 0; text-align:right; }
+  .wrap-photo-state .state span { margin-bottom:4px; font-size:12px; }
+  .wrap-photo-state .state img { margin-top:-2px; height:16px; width:auto;  }
+  .wrap-photo-state .btn-img-download { width:70px; height:20px; line-height:20px; font-size:11px; }
+
+  .wrap-pickup-state .btn-menu-tab span { width:25%; }
+  .wrap-pickup-state .list { padding:0 30px; }
+  .wrap-pickup-state .thumb img { width:51px; height:51px; }
+  .wrap-pickup-state li { padding:3px 0 8px 67px; margin-bottom:30px; min-height:51px; font-size:12px; color:#5c5c5c;}
+  .wrap-pickup-state dt { margin-bottom:4px; }
+  .wrap-pickup-state p.txt2 .bar:first-child { display:none; }
+  .wrap-pickup-state strong {  font-size:12px; }
+  .wrap-pickup-state .bar { font-size:5px; vertical-align: middle; margin:-3px 5px 0 5px; display:inline-block; }
+
+  .wrap-pickup-state .search { clear:both; padding:0 30px; margin-bottom:21px; }
+  .wrap-pickup-state .content-search  { clear:both;  display:block; content: ''; }
+  .wrap-pickup-state .obj { float:left; width:33.3%; margin-bottom:8px; padding:0 4px; box-sizing: border-box;}
+  .wrap-pickup-state .select-wrap { margin:0 -4px; }
+
+  .list-pickup-state2 { padding:0 20px;}
+  .list-pickup-state2 h3 { padding:0 0 9px 6px; margin-bottom:7px; font-size:16px; }
+  .list-pickup-state2 .box-pickup-info { padding:7px; margin-bottom:-1px; }
+  .list-pickup-state2 .info { padding:0 120px 4px 0; }
+  .list-pickup-state2 .info .date { font-size:12px; font-weight:bold; }
+  .list-pickup-state2 .info .date .bar { display:none; }
+  .list-pickup-state2 .info span { font-size:11px; }
+  .list-pickup-state2 .info p { margin-top:-3px;}
+  .list-pickup-state2 .info .bar { font-size:10px; margin:0;}
+
+  .list-pickup-state2 .btn { right:7px; top:2px; }
+  .list-pickup-state2 .btn1,
+  .list-pickup-state2 .btn2 { width:51px; height:19px; line-height:19px; text-align:center; font-size:11px; }
+  .list-pickup-state2 .layer { right:0; top:13px; padding:19px 3px 3px 3px; display: none; }
+  .list-pickup-state2 .layer textarea { width:216px; height:41px; resize:none; margin-bottom:-2px; font-size:12px; border:1px solid #b7b7b7 }
+  .list-pickup-state2 .layer p { display:block; text-align:right; }
+  .list-pickup-state2 .layer .btn-save { width:40px; height:20px; display:inline-block; line-height:20px; text-align:center; font-size:11px; }
+  .list-pickup-state2 .layer .btn-close { position:absolute; right:3px; top:-3px; }
+  .list-pickup-state2 .layer .btn-close img {  height:8px; width:auto; }
+  .list-pickup-state2 .btn-pickup-bottom { display:none; }
+
+  .list-pickup-state2 .content-table-1 { margin-top:10px;}
+  .list-pickup-state2 .content-table-1 th { width:65px; }
+
+  .list-pickup-state2 .btn-pickup-bottom { padding-top:130px; text-align:center; }
+  .list-pickup-state2 .btn-pickup-bottom a { width:466px; height:88px; line-height:88px; font-size:34px; font-weight: bold; }
+
+  .list-pickup-state2 .title-deposit { padding:0px 10px 5px 7px; margin-bottom:20px; }
+  .list-pickup-state2 .title-deposit h3 { font-size:16px; border:0; padding:0; }
+  .list-pickup-state2 .title-deposit .price { font-size:11px; }
+  .list-pickup-state2 .title-deposit .price strong { display:inline-block; margin-left:5px; font-size:17px; }
+
+
+  .list-pickup-state3 .box-pickup-info { margin-bottom:15px; }
+  .list-pickup-state3 .info {padding-right:0; }
+  .list-pickup-state3 .info p { display:inline; }
+  .list-pickup-state3 .info p:first-child { margin-bottom:9px; }
+  .list-pickup-state3 .info .date .bar { display:none; }
+  .list-pickup-state3 .info .date { display:block; font-weight:bold; }
+  .list-pickup-state3 .info span.btn-state { position:absolute; right:7px; top:8px; display:inline-block; text-align:center; width:37px; height:16px; font-size:11px; line-height:16px; color:#fefefe; margin-left:37px; background:#959595 }
+  .list-pickup-state3 .btn-pickup-bottom { padding-top:100px; }
+
+  .list-pickup-state4 .info { padding-right:0; }
+  .list-pickup-state4 .delivery-state { position:relative;}
+  .list-pickup-state4 .btn-layer-open {padding:0 7px; height:18px; line-height:18px; margin-left:5px; color:#fff; background:#f44336;  border:0; font-size:11px; }
+  .list-pickup-state4 .delivery-state-layer { position:absolute; right:-20px; top:14px; padding:25px 10px 10px 10px; width:240px; display:none; font-size:11px; color:#545454; background:#e6e6e6; border:1px solid #cbcbcb;  }
+  .list-pickup-state4 .delivery-state-layer em { font-style: normal; color:#f44336;  display:inline-block; line-height:20px; margin:0 10px; border-bottom:1px solid #f44336; }
+  .list-pickup-state4 .delivery-state-layer .btn-layer { padding:0 7px; height:18px; line-height:18px; margin-left:5px; color:#fff; background:#f44336;  border:0; font-size:11px; }
+  .list-pickup-state4 .delivery-state-layer .btn-close { position: absolute; right:4px; top:8px; }
+  .list-pickup-state4 .delivery-state-layer .btn-close img { width:auto; height:9px; }
+  .list-pickup-state4 .top-brand-info { position:relative; min-height:43px; padding:7px 0 11px 67px; }
+  .list-pickup-state4 .top-brand-info .thumb { position:absolute; left:0; top:0; }
+  .list-pickup-state4 .top-brand-info .thumb img { width:51px; height:51px; }
+  .list-pickup-state4 .top-brand-info dt { font-size:12px; font-weight:bold; }
+  .list-pickup-state4 .top-brand-info dd { font-size:12px; color:#5c5c5c; }
+  .list-pickup-state4 .top-brand-info .bar { font-size:10px; color:#5c5c5c; display:inline-block; vertical-align: middle; }
+
+
+
+  .wrap-deposit { padding:0 20px; }
+  .wrap-deposit .title { padding:20px 10px 5px 7px; margin-bottom:20px; }
+  .wrap-deposit .title h3 { font-size:16px; }
+  .wrap-deposit .title .price { font-size:11px; }
+  .wrap-deposit .title .price strong { display:inline-block; margin-left:5px; font-size:17px; }
+  .wrap-deposit .deposit-price {font-size:12px; margin-bottom:5px; }
+  .wrap-deposit .deposit-price strong { font-size:13px; }
+  .wrap-deposit th { width:70px; padding:8px; font-size:12px; }
+  .wrap-deposit td { padding:8px 5px; font-size:12px; }
+  .wrap-deposit th.desc { width:auto; }
+  .wrap-deposit .paging { padding:22px 0;}
+  .wrap-deposit .paging a { height:20px; line-height:20px; padding:0 7px; font-size:11px }
+  .wrap-deposit .btn-bottom a  { width:100%; height:48px; line-height:48px; font-size:18px; }
+  .wrap-deposit .guide { padding:30px 10px; line-height:1.4; font-size:12px; }
+
+
+
+  .wrap-partner-state { padding:30px 20px; }
+  .wrap-partner-state .content-search { margin-bottom:20px; }
+  .wrap-partner-state .check-all label { font-size:12px; margin-right:10px; }
+  .wrap-partner-state .list { margin-top:10px; }
+  .wrap-partner-state .list li { padding:20px 130px 20px 78px; min-height:10px; }
+  .wrap-partner-state .list dt { font-size:12px; }
+  .wrap-partner-state .list dd { font-size:12px; }
+  .wrap-partner-state .list .bar { display:inline-block; font-size:10px; margin:0px 5px 0 5px; }
+  .wrap-partner-state .list .checkbox { lefT:0; top:15px; }
+  .wrap-partner-state .list .btn { top:50%; margin-top:-11px; }
+  .wrap-partner-state .list .btn img { width:auto; height:22px }
+  .wrap-partner-state .list .thumb { left:17px; margin-top:-25px; }
+  .wrap-partner-state .list .thumb  img { width:50px; height:50px; }
+
+  .wrap-alarm { padding:0 20px; }
+  .wrap-alarm .title {  margin-bottom:7px; }
+  .wrap-alarm .title h3 { padding:30px 10px 5px 7px; font-size:16px; }
+  .wrap-alarm .box {  padding:10px; margin-bottom:10px; font-size:12px; }
+  .wrap-alarm .box.on { border-color:#f44336; }
+  .wrap-alarm .state { position:absolute; right:10px; top:10px; color:#969696 }
+  .wrap-alarm dt { padding:0 80px 5px 0;}
+
+  .wrap-more-main .more-list-1 li { border-top:1px solid #ededed; }
+  .wrap-more-main .more-list-1 li:first-child { border-top:0;}
+  .wrap-more-main .more-list-1 a { display:block; font-size:14px; height:67px; line-height:67px; padding:0 40px 0 19px; color:#919191; font-weight:bold;  background:url('../img/more/ico_arrow.png') right center no-repeat;}
+  .wrap-more-main .more-list-1 img { vertical-align: middle; margin:-2px 0 0 5px; }
+  .wrap-more-main .more-list-1 strong { color:#f44336 }
+  .wrap-more-main .more-list-1 em { font-style:normal; color:#329d9c }
+
+  .wrap-more-main .more-list-2 { padding-top:9px; border-top:13px solid #ededed; }
+  .wrap-more-main .more-list-2 li { overflow:hidden; border-bottom:1px solid #ededed; }
+  .wrap-more-main .more-list-2 a { overflow:hidden; display:block; padding:0 19px; height:45px; line-height:45px; font-size:14px; color:#353535; }
+  .wrap-more-main .more-list-2 .ico {  display:inline-block; color:#fff; width:16px; height:16px; line-height:16px; text-align:center; font-size:8px; border-radius: 8px; vertical-align: middle; background:#d50000;}
+  .wrap-more-main .more-list-2 .txt1 { float:left; padding-left:19px; height:45px; line-height:45px;font-size:14px; color:#353535; }
+  .wrap-more-main .more-list-2 .txt2 { float:right; padding:10px 21px 10px 0; font-weight:bold; text-align:right; color:#f44336; font-size:12px;  }
+  .wrap-more-main .more-list-2 .txt2 strong { font-size:14px; }
+
+
+
+  .wrap-pickup-partner { padding:0 0 40px 0;  }
+  .wrap-pickup-partner .title {  display:none;  }
+  .wrap-pickup-partner .btn-menu-tab span { width:25%; }
+  .search-pickup-partner { padding:10px 30px 0 30px; }
+
+  .search-pickup-partner label { font-size:12px; margin-right:5px; }
+  .search-pickup-partner label input { vertical-align:middle; }
+  .search-pickup-partner .content-search { margin:10px 0 11px 0; }
+  .list-pickup-partner { padding:0 30px; }
+    .wrap-pickup-partner .top-brand-info { padding:8px 85px 8px 67px; min-height:51px; border-top:1px solid #cacaca; }
+    .wrap-pickup-partner .top-brand-info:first-child { border-top:none; }
+    .wrap-pickup-partner .top-brand-info .thumb {left:0; width:51px; height:51px; }
+    .wrap-pickup-partner .top-brand-info .thumb img { width:100%; height:100%; }
+    .wrap-pickup-partner .top-brand-info dt { padding:2px 0; font-size:12px; }
+    .wrap-pickup-partner .top-brand-info dd { font-size:12px; }
+    .wrap-pickup-partner .top-brand-info .btn-state { text-align:right; position:absolute; right:0; top:8px; width:100px; }
+    .wrap-pickup-partner .top-brand-info .btn-pickup { height:19px; line-height:19px; font-size:11px;  padding:0px 5px 0px 5px; }
+    .wrap-pickup-partner .top-brand-info .btn-pickup img { vertical-align: middle; margin:-3px 3px 0 0; height:8px; width:auto;  }
+    .wrap-pickup-partner .top-brand-info .bar { font-size:10px;  margin:0 3px; }
+    .wrap-pickup-partner .top-brand-info .state { position:relative;  height:19px; padding:0 5px; line-height:19px; margin-bottom:2px; text-align:center; font-size:11px; }
+    .wrap-pickup-partner .top-brand-info .state img { vertical-align: middle; margin:-3px 3px 0 0; height:8px; width:auto;  }
+    .wrap-pickup-partner .top-brand-info .btn { position: relative; height:19px; line-height:19px; padding:0 5px; margin-bottom:3px; font-size:11px; }
+    .wrap-pickup-partner .top-brand-info .btn img { vertical-align: middle; margin:-3px 3px 0 0;  height:8px; width:auto;  }
+    .wrap-pickup-partner .table-wrap { margin-bottom:-1px; }
+    .wrap-pickup-partner .table-wrap th { width:70px;}
+    .wrap-pickup-partner .table-wrap .btns { padding:5px 0 10px 0; text-align:center; }
+    .wrap-pickup-partner .table-wrap .btns button { padding:0 5px; height:19px; line-height:19px; font-size:11px; }
+    .wrap-pickup-partner .btn-partner { text-align:right; padding-right: 30px; }
+    .wrap-pickup-partner .btn-partner .btn-layer-open { position:fixed; bottom:20px; margin:40px 60px 0 0;width:50px; height:50px; text-align:center; border-radius:25px; font-size:10px; line-height:1.3;}
+    .wrap-pickup-partner .layer-partner-reg { display:none; position:absolute; right:0px; bottom:-40px; width:100%; border:1px solid #f44336; background:#fff; }
+    .wrap-pickup-partner .layer-partner-reg table { border:0; background:#fff; }
+    .wrap-pickup-partner .layer-partner-reg td { text-align:left; }
+    .wrap-pickup-partner .layer-partner-reg .btn-close { padding:0 15px 15px 0; background:#fff; margin-top:-1px;}
+    .wrap-pickup-partner .layer-partner-reg .btn-close button { text-align:center; height:22px; line-height:22px; padding:0 5px; font-size:12px; }
+    .wrap-pickup-partner .layer-partner-reg button { font-size:11px; height:20px; line-height:20px; padding:0 10px; }
+
+    .wrap-pickup-partner .layer-partner-reg .content-select { width:60px; }
+    .wrap-pickup-partner .layer-partner-reg .input-text { width:50px; height:22px; line-height:22px; font-size:12px; }
+    .wrap-pickup-partner .layer-partner-reg .input-text-addr { height:22px; line-height:22px; width:100%; box-sizing: border-box; margin-top:10px; font-size:21px; border:1px solid #bbb; }
+    .wrap-pickup-partner .layer-partner-reg textarea { width:100%; height:40px; font-size:21px;  box-sizing: border-box;  border:1px solid #929292; }
+
+    .wrap-pickup-form { padding:10px 30px; }
+    .wrap-pickup-form .title {  position:relative; padding:0 0 5px 7px; margin-bottom:7px; border-bottom:1px solid #bbb; }
+    .wrap-pickup-form .title h3 { font-size:14px; }
+    .wrap-pickup-form .title .btn-modify { position:absolute; right:0; bottom:5px; color:#343434; font-size:11px; }
+    .wrap-pickup-form .title .btn-search { position:absolute; right:0; bottom:5px; color:#343434; font-size:11px;  color:#fff; background:#f44a3d; display:inline-block; height:19px; line-height:19px;  padding:0 7px; text-align:center; }
+    .wrap-pickup-form .info { padding:0 6px 30px 6px; }
+    .wrap-pickup-form .info strong { color:#000; font-size:11px; }
+    .wrap-pickup-form .info p { display:block; font-size:11px; color:#6a6a6a; line-height:1.4;}
+    .wrap-pickup-form .info .bar { color:#000; display:inline-block; vertical-align: middle; font-size:10px; margin-top:-3px; }
+    .wrap-pickup-form .textarea { margin:-8px 0 11px 0; background:#fff; }
+    .wrap-pickup-form .textarea textarea { height:66px; padding:7px 10px; box-sizing: border-box; font-size:11px; }
+    .wrap-pickup-form textarea {  resize: none; width:100%; border:1px solid #bbb; }
+    .wrap-pickup-form .title-input { padding-top:5px; }
+    .wrap-pickup-form .input-text { position:absolute; right:0; bottom:6px; width:130px; height:19px; line-height:19px; font-size:11px; border:1px solid #bbb; }
+    .wrap-pickup-form .title-textarea { padding-top:10px; }
+    .wrap-pickup-form .box-radio { margin-bottom:6px; }
+    .wrap-pickup-form .box-radio p { display:block; padding:8px 0;  }
+    .wrap-pickup-form .box-radio p:first-child { margin-bottom:-8px; }
+    .wrap-pickup-form .box-radio .left,
+    .wrap-pickup-form .box-radio .right { float:left; width:50%; padding:8px 0; }
+
+    .wrap-pickup-form .box-radio label { font-size:12px; padding:0 0 0 10px; }
+    .wrap-pickup-form .btn-bottom { padding-top:15px; text-align: center; }
+    .wrap-pickup-form .btn-bottom button { width:100%; height:50px; line-height:50px; font-size:18px; }
+    .wrap-pickup-form .box-radio .btn { padding:0 7px; height:17px; line-height:17px; font-size:12px; }
+
+    .wrap-order .inner h2 { display:none;  }
+    .wrap-order .btn-menu-tab span { width:33.3%; }
+    .wrap-order-detail { padding:0 30px; }
+    .wrap-order-detail .title { position:relative; margin-bottom:5px; border-bottom:1px solid #bbb; }
+    .wrap-order-detail .title h3 { font-size:14px; padding:0 0 5px 5px;}
+    .wrap-order-detail .title .btn-modify{ position:absolute; right:0; bottom:5px; color:#343434; font-size:11px; }
+    .wrap-order-detail .desc { padding:0 5px; font-size:12px; margin-bottom:25px; color:#6a6a6a; }
+    .wrap-order-detail .desc strong { font-weight:normal; color:#000; }
+    .wrap-order-detail .desc .bar { display:inline-block; font-size:11px; vertical-align: middle; margin:0 5px; color:#000; line-height:1.5; }
+    .wrap-order-detail .count { overflow:hidden; padding:0  0 0 5px; font-size:12px; color:#000; }
+    .wrap-order-detail em { color:#f44336; font-style:normal; }
+    .wrap-order-detail .count .left { float:left;  }
+    .wrap-order-detail .count .right { float:right;  }
+    .wrap-order-detail .box-order {  margin-top:10px; border:1px solid #f44336; background:#ffeade }
+    .wrap-order-detail .box-order dl { padding:7px 5px; border-bottom:1px solid #a1a1a1; }
+    .wrap-order-detail .box-order dt { font-size:12px; font-weight:bold; color:#000; margin-bottom:10px; }
+    .wrap-order-detail .box-order dd { position:relative; padding:5px 70px 5px 0; font-size:11px; color:#5c5c5c;   }
+    .wrap-order-detail .box-order .bar { display:inline-block; vertical-align: middle; font-size:10px; margin-top:-3px; }
+    .wrap-order-detail .number-count { position:absolute; right:0; top:5px; }
+    .wrap-order-detail .number-count input { float:left; width:16px; height:14px; line-height:14px; font-size:11px; border:1px solid #adadad; margin:0 -1px; text-align:center; }
+    .wrap-order-detail .number-count button { float:left; width:16px; height:16px; line-height:16px; font-size:11px; border:1px solid #adadad; background:#fff; }
+    .wrap-order-detail table { margin:5px 0; width:100%; border-collapse: collapse; border-spacing: 0; font-size:12px; }
+    .wrap-order-detail table th { padding:5px 11px; text-align:left;  font-weight:normal; }
+    .wrap-order-detail table td { padding:5px 11px; text-align:right; }
+    .wrap-order-detail td .input-text { width:60px; margin:-10px 0; height:20px; line-height:20px; font-size:12px; text-align:right; border:1px solid #bbb; }
+    .wrap-order-detail .box-total { margin-top:45px; padding:15px 10px; overflow:hidden; font-size:12px; border:1px solid #d1d1d1; background:#e0e0e0; }
+    .wrap-order-detail .box-total span { color:#666; }
+    .wrap-order-detail .box-total .left { float:left; width:30%; }
+    .wrap-order-detail .box-total .right { float:right; width:70%; text-align:right; }
+
+    .wrap-order-detail .btn-bottom { overflow: hidden; padding:30px 0 !important;  text-align:center; margin:0 -3px; }
+    .wrap-order-detail .btn-bottom span { float:left; padding:0 3px; box-sizing: border-box; width:50%;  margin:0; }
+    .wrap-order-detail .btn-bottom button { width:100%; height:50px;  border:0; line-height:50px; font-size:49px; font-size:18px; color:#fff; }
+    .wrap-order-detail .btn-bottom .btn-pickup { background:#f44336; }
+    .wrap-order-detail .btn-bottom .btn-cancel { background:#959595; }
+    .wrap-order-detail .qna { padding:0; }
+    .wrap-order-detail .qna .desc { margin-bottom:0; }
+
+}
+
+
+/*-----------------------------------------
+            @media - pc
+-------------------------------------------*/
+@media all and (min-width: 799px) {
+  .navigation-mobile { display:none; }
+
+  .swiper-home-wrapper { height:880px; width:100%; }
+  .swiper-home-wrapper .mobile { display:none; }
+  .swiper-home-wrapper .pc { position:relative; display:block; } /* 수정 18-07-25 */
+  .swiper-home-wrapper .pc:after  {  position:absolute; left:0; top:0; width:100%; height:100%; display:block; content:''; background:url('../img/common/bg_main_pc.png') repeat-x; background-size:auto 100%; } /* 수정 18-07-25 */
+  .swiper-home-wrapper img { width:100%; height:880px; }
+
+  .swiper-home-wrapper .txt { bottom:95px; }
+  .swiper-home-wrapper .txt dl { padding:0 20px;}
+  .swiper-home-wrapper .txt dt { padding-bottom:15px; font-size:51px; }
+  .swiper-home-wrapper .txt dd { padding-bottom:30px; font-size:35px; }
+
+  .swiper-home-wrapper .btn {  width:243px; height:68px; font-size:35px;  line-height:68px;  }
+
+
+  .swiper-home-pagination { bottom:41px !important;}
+  .swiper-home-pagination .swiper-pagination-bullet { width:48px; height:6px; border-radius: 3px; }
+
+  .list-talk-pick { overflow: hidden; width:941px; margin:0 auto; }
+  .list-talk-pick .tit { padding:40px 0 28px 0; text-align:center; font-family:Georgia; font-size:40px; font-style: italic; font-weight: normal; color:#000; }
+  .list-talk-pick .tit em { color:#d50000; font-family:Georgia; }
+  .list-talk-pick .obj-product { width:313px; padding:10px 10px; overflow:hidden; box-sizing: border-box;}
+
+  .list-product-main { width:1334px; padding:23px 0 160px 0; margin:0 auto; }
+  .list-product-main:after { clear:both; content:''; display:block; }
+  .list-product-main .obj-product { width:25%; padding:16px 7px; box-sizing: border-box; }
+  .list-product-main .obj-product .state .txt { width:50%; }
+
+  .swiper-wrap-wrapper .swiper-wrapper,
+  .swiper-wrap-wrapper .swiper-slide { height:auto !important; }
+
+  .wrap-delivery .inner { width:900px; margin:0 auto; padding:70px 0 400px 0; }
+  .wrap-delivery .inner .tab-btns a { float:left; width:220px; height:52px; line-height:52px; text-align:center; font-size:21px; color:#616161; margin-left:5px; border:1px solid #f44336; }
+  .wrap-delivery .inner .tab-btns a:first-child { margin-left:0; }
+  .wrap-delivery .inner .tab-btns .active { background:#f44336; color:#fff; }
+  .wrap-delivery .pcikup-content-main { padding-top:124px; text-align:center; }
+  .wrap-delivery .inner h2 { font-size:36px; margin-bottom:30px; color:#343434; text-align:center; }
+  .wrap-delivery .pcikup-content-main .txt { font-size:36px; color:#f44336; padding:12px 0 48px 0; line-height:1.4; }
+  .wrap-delivery .pcikup-content-main .txt strong { font-size:44px; font-weight:normal; }
+  .wrap-delivery .btn-quick-pickup { display:none; }
+
+
+
+  .wrap-qna { width:800px !important; margin:0 auto; padding:100px 0;  }
+  .wrap-qna .title { padding:12px; margin-bottom:42px; font-size:23px; }
+  .wrap-qna .btn { margin:0 -3px 16px -3px; width:100%}
+  .wrap-qna .btn span { width:25%; padding:0 3px; box-sizing: border-box; }
+  .wrap-qna .btn a { font-size:24px; height:73px; line-height:73px; }
+  .wrap-qna .btn .active a { display:block; text-align:center; color:#fff; bordeR:1px solid #f44337; background:#f44337; }
+  .wrap-qna dl { border-bottom:1px solid #bbb; }
+  .wrap-qna dt a { display:block; padding:40px 20px; font-size:24px; }
+  .wrap-qna dd { padding:31px 25px; color:#7d7d7d; font-size:21px; line-height:2.2; }
+
+
+  .wrap-photo-state { width:810px; margin:0 auto; padding:80px 0 180px 0;  }
+  .wrap-photo-state .title { font-size:23px; text-align:center; margin-bottom:28px; }
+  .wrap-photo-state li { padding:20px 120px 20px 0;}
+  .wrap-photo-state dt { margin-bottom:11px; font-size:24px; }
+  .wrap-photo-state dd { font-size:18px;  }
+  .wrap-photo-state .bar { margin:0 8px; font-size:8px; vertical-align:top; margin-top:4px; }
+  .wrap-photo-state .state { padding:26px 0; text-align:right; }
+  .wrap-photo-state .state span { margin-bottom:8px; font-size:18px; }
+  .wrap-photo-state .state img { margin-top:-2px; }
+  .wrap-photo-state .btn-img-download { width:100px; height:30px; line-height:30px; }
+
+  .wrap-pickup-state { padding:25px 20px; }
+  .wrap-pickup-state { width:800px; margin:0 auto; padding:100px 0;  }
+  .wrap-pickup-state .title { padding:12px; margin-bottom:42px; font-size:23px; }
+  .wrap-pickup-state .btn-menu-tab span { width:25%;  }
+
+
+  .wrap-pickup-state .thumb { position:absolute; left:0; top:0; }
+  .wrap-pickup-state li { padding:5px 0 22px 105px; margin-bottom:30px; min-height:51px; font-size:21px; color:#5c5c5c;}
+  .wrap-pickup-state dt { margin-bottom:11px; }
+  .wrap-pickup-state p { display:inline; }
+  .wrap-pickup-state strong {  font-size:24px; }
+  .wrap-pickup-state .bar { font-size:11px; vertical-align: top; margin:6px 5px 0 5px; display:inline-block; }
+
+  .wrap-pickup-state .btn-menu-tab a { height:51px; line-height:51px; color:#616161; font-size:21px; }
+  .wrap-pickup-state .btn-menu-tab .active a { color:#fff; }
+  .wrap-pickup-state .list-pickup-state { padding-top:54px; }
+  .wrap-pickup-state .list {  padding-top:40px; clear:both; }
+  .wrap-pickup-state .search { position:relative; clear:both;  margin-bottom:21px; }
+  .wrap-pickup-state .select-wrap { float:left;}
+  .wrap-pickup-state .obj { float:left; width:151px; margin-right:14px; }
+  .wrap-pickup-state .content-search { float:right; width:402px; padding-right:60px; }
+  .wrap-pickup-state .content-search input { height:40px; font-size:17px; line-height:40px;  }
+  .wrap-pickup-state .content-search .btn-search { width:40px; height:40px; right:10px; background-size:28px;}
+
+  .list-pickup-state2 h3 { padding:10px 0 5px 13px; margin-bottom:15px; font-size:36px; }
+  .list-pickup-state2 .box-pickup-info { padding:20px; margin-bottom:-1px; }
+  .list-pickup-state2 .info { padding:0 10px 4px 0; }
+  .list-pickup-state2.info .date { font-size:27px; font-weight:bold; }
+  .list-pickup-state2 .btn { right:20px; top:20px; }
+  .list-pickup-state2 .btn1,
+  .list-pickup-state2 .btn2 { width:88px; height:31px; line-height:31px; text-align:center; font-size:21px; }
+  .list-pickup-state2 .layer { right:0; top:41px; padding:31px 9px 7px 9px; display: none; }
+  .list-pickup-state2 .layer textarea { width:417px; height:72px; resize:none; margin-bottom:5px; border:1px solid #b7b7b7 }
+  .list-pickup-state2 .layer p { display:block; text-align:center; }
+  .list-pickup-state2 .layer .btn-save { width:74px; height:32px; display:inline-block; line-height:32px; font-size:19px; }
+  .list-pickup-state2 .layer .btn-close { position:absolute; right:9px; top:7px; }
+  .list-pickup-state2 .info span { font-size:21px; }
+  .list-pickup-state2 .info .bar { font-size:10px; margin:-6px 10px 0 10px;}
+  .list-pickup-state2 .content-table-1 { margin-top:20px;}
+  .list-pickup-state2 .content-table-1 th { width:150px; }
+
+  .list-pickup-state2 .btn-pickup-bottom { padding-top:130px; text-align:center; }
+  .list-pickup-state2 .btn-pickup-bottom a { width:466px; height:88px; line-height:88px; font-size:34px; font-weight: bold; }
+  .list-pickup-state2 .btn-quick-pickup { display:none; }
+
+  .list-pickup-state2 .title-deposit { padding:40px 10px 5px 15px; margin-bottom:37px; }
+  .list-pickup-state2 .title-deposit h3 { font-size:36px; padding:0; border:0; }
+  .list-pickup-state2 .title-deposit .price { font-size:24px; }
+  .list-pickup-state2 .title-deposit .price strong { display:inline-block; margin-left:5px; font-size:40px; }
+
+  .list-pickup-state3 .box-pickup-info { padding:20px; margin-bottom:35px; }
+  .list-pickup-state3 .info p { display:block; }
+  .list-pickup-state3 .info p:first-child { margin-bottom:17px; }
+  .list-pickup-state3 .info .date { font-size:27px; font-weight:bold; }
+  .list-pickup-state3 .info .brand .bar { display:none; }
+  .list-pickup-state3 .info span.btn-state { display:inline-block; text-align:center; width:88px; height:31px; line-height:31px; color:#fefefe; margin-left:37px; background:#959595 }
+  .list-pickup-state3 .btn-pickup-bottom { padding-top:100px; }
+
+  .list-pickup-state4 .box-pickup-info { padding:20px; margin-bottom:35px; }
+  .list-pickup-state4 .info { padding-right:0; }
+  .list-pickup-state4 .info p { display:block; }
+  .list-pickup-state4 .info p:first-child { margin-bottom:17px; }
+  .list-pickup-state4 .info .date { font-size:27px; font-weight:bold; }
+  .list-pickup-state4 .info .brand .bar { display:none; }
+  .list-pickup-state4 .delivery-state { position:relative;}
+  .list-pickup-state4 .btn-layer-open { width:100px; height:33px; line-height:33px; margin-left:5px; color:#fff; background:#f44336;  border:0; font-size:21px; }
+  .list-pickup-state4 .delivery-state-layer { position:absolute; left:0; top:34px; padding:45px 28px 20px 28px; display:none; background:#e6e6e6; color:#545454; border:1px solid #cbcbcb;  }
+  .list-pickup-state4 .delivery-state-layer em { font-style: normal; color:#f44336;  display:inline-block; line-height:30px; margin:0 10px; border-bottom:1px solid #f44336; }
+  .list-pickup-state4 .delivery-state-layer .btn-layer { padding:0 10px; height:33px; line-height:33px; margin-left:5px; color:#fff; background:#f44336;  border:0; font-size:21px; }
+  .list-pickup-state4 .delivery-state-layer .btn-close { position: absolute; right:9px; top:12px; }
+  .list-pickup-state4 .top-brand-info { position:relative; min-height:70px; padding:7px 0 18px 90px; }
+  .list-pickup-state4 .top-brand-info .thumb { position:absolute; left:0; top:0; }
+  .list-pickup-state4 .top-brand-info .thumb img { width:75px; height:77px; }
+  .list-pickup-state4 .top-brand-info dt { font-size:24px; font-weight:bold; }
+  .list-pickup-state4 .top-brand-info dd { font-size:21px; color:#5c5c5c; }
+  .list-pickup-state4 .top-brand-info .bar { font-size:11px; color:#5c5c5c; display:inline-block; vertical-align: top; }
+
+  .wrap-deposit { width:800px; margin:0 auto; }
+  .wrap-deposit .title { padding:40px 10px 5px 15px; margin-bottom:70px; }
+  .wrap-deposit .title h3 { font-size:36px; }
+  .wrap-deposit .title .price { font-size:24px; }
+  .wrap-deposit .title .price strong { display:inline-block; margin-left:5px; font-size:40px; }
+  .wrap-deposit .deposit-price {font-size:24px; margin-bottom:10px; }
+  .wrap-deposit .deposit-price strong { font-size:30px; }
+  .wrap-deposit th { width:130px; padding:15px; font-size:21px; }
+  .wrap-deposit td { padding:16px 15px; font-size:18px; }
+  .wrap-deposit th.desc { width:auto; }
+  .wrap-deposit .paging { padding:52px 0 100px 0;}
+  .wrap-deposit .paging a { height:30px; line-height:30px; padding:0 10px; font-size:18px }
+  .wrap-deposit .btn-bottom a  { width:654px; height:125px; line-height:125px; font-size:49px; }
+  .wrap-deposit .guide { padding:20px 10px; line-height:1.4; }
+  .wrap-deposit .guide em { text-align:center;  font-style: normal; color:#f44336; text-decoration: underline;}
+
+
+  .wrap-partner-state { width:900px; margin:0 auto; padding:82px 0; }
+  .wrap-partner-state .content-search { margin-bottom:60px; }
+  .wrap-partner-state .check-all label { font-size:21px; margin-right:35px; }
+  .wrap-partner-state .list { margin-top:30px; }
+  .wrap-partner-state .list li { padding:40px 300px 40px 140px; min-height:10px; }
+  .wrap-partner-state .list dt { display:inline-block; font-size:24px;margin-right:20px; }
+  .wrap-partner-state .list dd { display:inline-block; font-size:18px; }
+  .wrap-partner-state .list .bar { display:inline-block; font-size:12px; margin:3px 5px 0 5px; }
+  .wrap-partner-state .list .checkbox { lefT:0; top:50%; margin-top:-13px; }
+  .wrap-partner-state .list .btn { top:50%; margin-top:-23px; }
+  .wrap-partner-state .list .thumb { left:46px; margin-top:-38px; }
+  .wrap-partner-state .list .thumb  img { width:75px; height:77px; }
+
+
+  .wrap-pickup-partner { width:800px; margin:0 auto; padding:100px 0;  }
+  .wrap-pickup-partner .title { padding:12px; margin-bottom:42px; font-size:23px; }
+  .wrap-pickup-partner .btn-menu-tab span { width:25%; }
+  .wrap-pickup-partner .btn-menu-tab a { height:51px; line-height:51px; color:#616161; font-size:21px; }
+  .wrap-pickup-partner .btn-menu-tab .active a { color:#fff; }
+  .search-pickup-partner { padding-top:20px; }
+  .search-pickup-partner label { font-size:24px; margin-right:40px; }
+  .search-pickup-partner label input { width:18px; height:18px; }
+  .search-pickup-partner .content-search { margin: 30px 0 50px 0; }
+  .wrap-pickup-partner .top-brand-info { padding:20px 220px 20px 93px; min-height:77px; border-top:1px solid #cacaca; }
+  .wrap-pickup-partner .top-brand-info:first-child { border-top:none; }
+  .wrap-pickup-partner .top-brand-info .thumb {left:0; width:75px; height:77px; }
+  .wrap-pickup-partner .top-brand-info .thumb img { width:100%; height:100%; }
+  .wrap-pickup-partner .top-brand-info dt { font-size:26px; display:inline-block; margin-right:15px; }
+  .wrap-pickup-partner .top-brand-info dd { font-size:18px; display:inline; }
+  .wrap-pickup-partner .top-brand-info .btn-pickup { height:34px; line-height:34px; font-size:18px; margin-top:11px; padding:0px 12px 0px 7px; }
+  .wrap-pickup-partner .top-brand-info .btn-pickup img { vertical-align: middle; margin:-3px 3px 0 0; }
+  .wrap-pickup-partner .top-brand-info .bar { font-size:11px;  margin:0 7px; }
+  .wrap-pickup-partner .top-brand-info .state { top:20px;  width:120px; height:36px; line-height:36px; text-align:center; font-size:18px; }
+  .wrap-pickup-partner .top-brand-info .state img { vertical-align: middle; margin:-3px 3px 0 0;  }
+  .wrap-pickup-partner .top-brand-info .btn { top:20px; height:34px; line-height:34px; padding:0 12px; font-size:18px; }
+  .wrap-pickup-partner .top-brand-info .btn img { vertical-align: middle; margin:-3px 3px 0 0;  }
+  .wrap-pickup-partner .table-wrap { margin-bottom:-1px; }
+  .wrap-pickup-partner .table-wrap th { width:180px;}
+  .wrap-pickup-partner .table-wrap .btns { padding-left:200px;}
+  .wrap-pickup-partner .table-wrap .btns button { padding:0 15px; height:33px; line-height:33px; font-size:18px; }
+  .wrap-pickup-partner .btn-partner {  }
+  .wrap-pickup-partner .btn-partner .btn-layer-open { margin:40px 10px 0 0;width:110px; height:110px; text-align:center; border-radius:55px; font-size:21px; line-height:1.3;}
+  .wrap-pickup-partner .layer-partner-reg { display:none; position:absolute; right:44px; bottom:40px; width:800px; border:1px solid #f44336; background:#fff; }
+  .wrap-pickup-partner .layer-partner-reg table { border:0; background:#fff; }
+  .wrap-pickup-partner .layer-partner-reg td { text-align:left; }
+  .wrap-pickup-partner .layer-partner-reg .btn-close { padding:0 25px 25px 0; background:#fff; margin-top:-1px;}
+  .wrap-pickup-partner .layer-partner-reg .btn-close button { text-align:center; height:50px; line-height:50px; width:100px; font-size:24px; }
+  .wrap-pickup-partner .layer-partner-reg button { font-size:18px; height:27px; line-height:27px; padding:0 10px; }
+
+  .wrap-pickup-partner .layer-partner-reg .content-select { width:105px; }
+  .wrap-pickup-partner .layer-partner-reg .input-text { width:105px; height:39px; line-height:39px; font-size:21px; }
+  .wrap-pickup-partner .layer-partner-reg .input-text-addr { height:47px; line-height:47px; width:510px; margin-top:10px; font-size:21px; border:1px solid #929292; }
+  .wrap-pickup-partner .layer-partner-reg textarea { width:510px; height:103px; font-size:21px; border:1px solid #929292; }
+
+  .wrap-pickup-form .title {  position:relative; padding:0 0 16px 16px; margin-bottom:15px; border-bottom:1px solid #bbb; }
+  .wrap-pickup-form .title h3 { font-size:27px; }
+  .wrap-pickup-form .title .btn-modify { position:absolute; right:0; bottom:16px; color:#343434; font-size:21px; }
+  .wrap-pickup-form .title .btn-search { position:absolute; right:0; bottom:16px;  font-size:21px;  color:#fff; background:#f44a3d; display:inline-block; height:40px; line-height:40px; width:70px; text-align:center; }
+  .wrap-pickup-form .info { padding:0 16px 80px 16px; }
+  .wrap-pickup-form .info strong { color:#000; font-size:21px; }
+  .wrap-pickup-form .info p { display:block; font-size:21px; color:#6a6a6a; line-height:1.4;}
+  .wrap-pickup-form .info .bar { color:#000; display:inline-block; vertical-align: middle; font-size:11px; margin-top:-3px; }
+  .wrap-pickup-form .textarea { margin:-16px 0 30px 0; background:#fff; }
+  .wrap-pickup-form .textarea textarea { height:190px; padding:25px 20px; box-sizing: border-box; font-size:21px; }
+  .wrap-pickup-form textarea {  resize: none; width:100%; border:1px solid #bbb; }
+  .wrap-pickup-form .title-input { padding-top:37px; }
+  .wrap-pickup-form .input-text { position:absolute; right:0; bottom:10px; width:307px; height:51px; line-height:51px; font-size:21px; border:1px solid #bbb; }
+  .wrap-pickup-form .title-textarea { padding-top:34px; }
+  .wrap-pickup-form .box-radio { margin-bottom:15px; }
+  .wrap-pickup-form .box-radio p { display:block; padding:20px 0;  }
+  .wrap-pickup-form .box-radio p:first-child { margin-bottom:-20px; }
+  .wrap-pickup-form .box-radio .left,
+  .wrap-pickup-form .box-radio .right { float:left; width:50%; padding:20px 0; }
+
+  .wrap-pickup-form .box-radio label { font-size:21px; padding:0 0 0 20px; }
+  .wrap-pickup-form .btn-bottom { padding:40px 0; text-align: center; }
+  .wrap-pickup-form .btn-bottom button { width:468px; height:88px; line-height:88px; font-size:35px; }
+  .wrap-pickup-form .box-radio .btn { padding:0 20px; height:40px; line-height:40px; font-size:21px; }
+  .wrap-pickup-form .box-radio input { width:18px; height:18px; }
+
+  .wrap-order .inner h2 { text-align:center; }
+  .wrap-order .inner { width:900px; margin:0 auto; padding:70px 0 400px 0; }
+  .wrap-order .btn-menu-tab span { width:301px; }
+  .wrap-order .btn-menu-tab a { height:51px; line-height:51px; color:#616161; font-size:21px; }
+  .wrap-order .btn-menu-tab .active a { color:#fff; }
+  .wrap-order .inner h2 { font-size:36px; margin-bottom:30px; color:#343434; text-align:center; }
+  .wrap-order-detail { padding-top:22px; }
+  .wrap-order-detail .title { position:relative; margin-bottom:28px; border-bottom:1px solid #bbb; }
+  .wrap-order-detail .title h3 { font-size:36px; padding:0 0 16px 12px;}
+  .wrap-order-detail .title .btn-modify{ position:absolute; right:0; bottom:16px; color:#343434; font-size:24px; }
+  .wrap-order-detail .desc { padding:0 16px; font-size:21px; margin-bottom:62px; color:#6a6a6a; margin-top:-8px; }
+  .wrap-order-detail .desc strong { font-weight:normal; color:#000; }
+  .wrap-order-detail .desc p { display:block; padding:8px 0; }
+  .wrap-order-detail .desc .bar { display:inline-block; font-size:11px; vertical-align: middle; margin:0 5px; color:#000; line-height:1.4; }
+  .wrap-order-detail .count { overflow:hidden; padding:0  0 0 16px; font-size:30px; color:#000; }
+  .wrap-order-detail em { color:#f44336; font-style:normal; }
+  .wrap-order-detail .count .left { float:left;  }
+  .wrap-order-detail .count .right { float:right;  }
+  .wrap-order-detail .box-order {  margin-top:23px; border:1px solid #f44336; background:#ffeade }
+  .wrap-order-detail .box-order dl { padding:20px 15px; border-bottom:1px solid #a1a1a1; }
+  .wrap-order-detail .box-order dt { font-size:24px; font-weight:bold; color:#000; margin-bottom:10px; }
+  .wrap-order-detail .box-order dd { position:relative; padding:10px 100px 10px 0; font-size:18px; color:#5c5c5c;   }
+  .wrap-order-detail .box-order .bar { display:inline-block; vertical-align: middle; font-size:11px; margin-top:-3px; }
+  .wrap-order-detail .number-count { position:absolute; right:0; top:5px; }
+  .wrap-order-detail .number-count input { float:left; width:30px; height:28px; line-height:28px; font-size:15px; border:1px solid #adadad; margin:0 -1px; text-align:center; }
+  .wrap-order-detail .number-count button { float:left; width:30px; height:30px; line-height:30px; font-size:15px; border:1px solid #adadad; background:#fff; }
+  .wrap-order-detail table { margin:5px 0; width:100%; border-collapse: collapse; border-spacing: 0; }
+  .wrap-order-detail table th { padding:10px 20px; text-align:left; }
+  .wrap-order-detail table td { padding:10px 20px; text-align:right; }
+  .wrap-order-detail td .input-text { width:145px; margin:-10px 0; height:36px; line-height:36px; font-size:18px; text-align:right; border:1px solid #bbb; }
+  .wrap-order-detail .box-total { margin-top:70px; padding:18px; overflow:hidden; font-size:30px; border:1px solid #d1d1d1; background:#e0e0e0; }
+  .wrap-order-detail .box-total span { color:#666; }
+  .wrap-order-detail .box-total .left { float:left; width:30%; }
+  .wrap-order-detail .box-total .right { float:right; width:70%; text-align:right; }
+
+  .wrap-order-detail .btn-bottom { padding:100px 0 40px 0; text-align:center; }
+  .wrap-order-detail .btn-bottom button {width:386px; height:125px; margin:0 10px; border:0; line-height:125px; font-size:49px; color:#fff; }
+  .wrap-order-detail .btn-bottom .btn-pickup { background:#f44336; }
+  .wrap-order-detail .btn-bottom .btn-cancel { background:#959595; }
+  .wrap-order-detail .qna .desc { margin-bottom:0; }
+}

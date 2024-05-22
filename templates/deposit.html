@@ -1,0 +1,224 @@
+{% extends "base.html" %}
+{% block content %}
+<h3 align="left">얼마나 예치할까요?</h3>
+<div align="left" class="single-text">내 보유수량 {{amount}} {{coin_name}} <span class="info_txt">더 가져오기</span></div>
+<br><br>
+
+<br>
+
+        <div id="content" style="min-height:400px;">
+            <div class="txt" align="left">스테이킹 신청수량</div><br>
+
+                <dl class="input_val">
+                    <dd><input type="tel" name="send_quantity" class="numonly comma" placeholder="숫자만 입력" id="myTextbox" oninput="handleChange(this)" /> <span class="go-text">{{coin_name}}</span>
+                    </dd>
+                </dl>
+                <dl class="input_val" style="display: table-row; display: table; width: 100%;">
+                    <div style="display:table-cell; width: 25%;">
+                        <button class="btn_square btn_c_gray_bdr" style="width:100%; padding: 10px; box-sizing: border-box; line-height:unset;" onclick="changeText(10)">10%</button>
+                    </div>
+                    <div style="display:table-cell; width: 25%;">
+                        <button class="btn_square btn_c_gray_bdr" style="width:100%; padding: 10px; box-sizing: border-box; line-height:unset;" onclick="changeText(25)">25%</button>
+                    </div>
+                    <div style="display:table-cell; width: 25%;">
+                        <button class="btn_square btn_c_gray_bdr" style="width:100%; padding: 10px; box-sizing: border-box; line-height:unset;" onclick="changeText(50)">50%</button>
+                    </div>
+                    <div style="display:table-cell; width: 25%;">
+                        <button class="btn_square btn_c_gray_bdr" style="width:100%; padding: 10px; box-sizing: border-box; line-height:unset;" onclick="changeText(100)">최대</button>
+                    </div>
+                    <dt></dt>
+                    <dt></dt>
+                </dl>
+                <span class="info_txt" style="align:left; float: left; visibility: hidden;" id="limit_amount">보유 수량까지만 신청이 가능해요
+                </span><br>
+
+
+            <style>
+              .container2 {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+              }
+              .left-text2 {
+                text-align: left;
+              }
+              .right-text2 {
+                text-align: right;
+              }
+            </style>
+            <div class="container2">
+                <div class="left-text2">
+                    <h3 style="text-align: left; opacity: 0.5; font-size: 13px;">스테이킹 후 잔여 수량</h3>
+                </div>
+                <div class="right-text2" id="display">0</div>
+            </div><div class="container2">
+                <div class="left-text2">
+                    <h3 style="text-align: left; opacity: 0.5; font-size: 13px;">예상 수수료(10%)</h3>
+                </div>
+                <div class="right-text2" id="display2">0</div>
+            </div><div class="container2">
+                <div class="left-text2">
+                    <div style="width: 150px;  text-align:left">
+                        <span>총 출금(수수료 포함) </span><br>
+                        <span>실제 스테이킹 수량</span>
+                    </div>
+                </div>
+                <div class="right-text2" id="display3">0</div>
+                    
+            </div>
+
+        </div>
+
+
+1년 뒤 예상되는 이자 <span id="display4">0</span> {{coin_name}} 
+    <button type="submit" class="btn_round btn_c_gray" id="myButton" disabled onclick="next_step()">다음</button>
+
+
+<script>
+function roundToDecimals(num, decimalPlaces) {
+  const factor = Math.pow(10, decimalPlaces);
+  return Math.round(num * factor) / factor;
+}
+
+function init_to_zero()
+{
+      document.getElementById("display").innerText = 0;
+      document.getElementById("display2").innerText = 0;
+      document.getElementById("display3").innerText = 0;
+      document.getElementById("display4").innerText = 0; 
+}
+function changeText(buttonNumber) {
+
+        var button = document.getElementById("myButton");
+        button.disabled = true; 
+        button.className ="btn_round btn_c_gray";
+
+  if (buttonNumber == 100) {
+    fee = parseFloat({{amount}}) / 10
+    stalk = roundToDecimals({{amount}} - fee,2)
+    var total_value = roundToDecimals(fee + stalk ,2)
+    
+      document.getElementById("display").innerText = {{amount}} - total_value;
+      document.getElementById("display2").innerText = fee;
+      document.getElementById("display3").innerText = total_value;
+      document.getElementById("display4").innerText = roundToDecimals(stalk / 100,2);
+      var textbox = document.getElementById('myTextbox');
+        textbox.value = stalk
+
+        button.disabled = false; 
+        button.className ="btn_round btn_c_orange";
+
+    return
+  }
+  var total_value = roundToDecimals(input_value + input_value / 10 ,2)
+  var textbox = document.getElementById('myTextbox');
+  textbox.value = roundToDecimals({{amount}} / 100 * buttonNumber, 2)
+
+    var input_value = parseFloat(textbox.value)
+    var remain_value = {{amount}} - textbox.value 
+    
+    // if (textbox.value > {{amount}}) {
+    //     var element = document.getElementById("limit_amount");
+    //         if (element) {
+    //           element.style.visibility = "visible";
+    //         }      
+    // }
+    if (remain_value < 0) {
+      // Display a popup
+
+        init_to_zero()
+    }
+    if (remain_value > -1) {
+      // Display a popup
+        var element = document.getElementById("limit_amount");
+            if (element) {
+              element.style.visibility = "hidden";
+            }
+        document.getElementById("display").innerText = remain_value;
+        document.getElementById("display3").innerText = total_value
+        document.getElementById("display2").innerText = roundToDecimals(input_value / 10 ,2);
+        var total_value = roundToDecimals(input_value + input_value / 10 ,2)
+        document.getElementById("display3").innerText = total_value
+        document.getElementById("display4").innerText = roundToDecimals(input_value / 100,2);
+
+        button.disabled = false; 
+        button.className ="btn_round btn_c_orange";
+    }
+
+
+    // Display the input value in another element
+}
+</script>
+
+<script>
+  function handleChange(input) {
+
+        var element = document.getElementById("limit_amount");
+            if (element) {
+              element.style.visibility = "hidden";
+            }
+        var warning_elem = document.getElementById("display2");
+            if (warning_elem) {
+                warning_elem.style.color = "black"
+            }
+        var button = document.getElementById("myButton");
+        button.disabled = true; 
+        button.className ="btn_round btn_c_gray";
+    // Get the value of the input field
+
+
+    input_value = parseFloat(input.value)
+
+    if(input_value == 0) { 
+        init_to_zero()
+        return}
+    var remain_value = {{amount}} - input_value;
+    var total_value = roundToDecimals(input_value + input_value / 10 ,2)
+
+    if (input_value > {{amount}}){
+        
+            if (element) {
+              element.style.visibility = "visible";
+            }
+        init_to_zero()
+        return
+    }
+    
+    if (total_value > {{amount}}) {
+      
+        console.log(total_value)
+        init_to_zero()
+        warning_elem.style.color = "#ff8a00";
+
+        warning_elem.innerText = '잔액이 부족해요'
+        return
+    }
+
+    if (remain_value > -1) {
+      // Display a popup
+
+        document.getElementById("display").innerText = remain_value;
+        document.getElementById("display3").innerText = total_value
+        document.getElementById("display2").innerText = roundToDecimals(input_value / 10 ,2);
+        
+        document.getElementById("display3").innerText = total_value
+        document.getElementById("display4").innerText = roundToDecimals(input_value / 100,2);
+
+        button.disabled = false; 
+        button.className ="btn_round btn_c_orange";
+    }
+    // Display the input value in another element
+    
+
+
+  }
+
+  function next_step(){
+    var send_amount = document.getElementById("display3").innerText
+    window.location.href = "/nextstep/{{coin_name}}/" + send_amount;
+
+  }
+</script>
+
+{% endblock %}
+

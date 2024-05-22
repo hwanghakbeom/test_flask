@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block content %}
+<h3 align="left">{{coin}} 스테이킹 완료 {{amount}}</h3>
+<br>
+
+        <div id="content" style="min-height:400px;">
+           
+
+            <style>
+              .container2 {
+                display: flex;
+                justify-content: space-between;
+              }
+              .left-text2 {
+                text-align: left;
+              }
+              .right-text2 {
+                text-align: right;
+              }
+            </style>
+            <div class="container2">
+                
+                    <button type="submit" style="width:50%"  class="btn_round btn_c_orange_bdr3" id="myButton" disabled onclick="next_step()">닫기</button>
+
+                <button type="submit" style="width:50%" class="btn_round btn_c_orange" id="myButton" disabled onclick="next_step()">스테이킹 내역</button>
+            </div>
+   
+
+
+
+{% endblock %}

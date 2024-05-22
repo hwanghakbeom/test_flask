@@ -1,0 +1,77 @@
+@import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
+/* @font-face {
+    font-family: 'Noto Sans Korean';
+    font-style: normal;
+    font-weight: 100;
+    src: local('Noto Sans Thin'), local('NotoSans-Thin'),
+    url(/assets/font/eot/NotoSansKR-Thin-Hestia.eot),
+    url(/assets/font/eot/NotoSansKR-Thin-Hestia.eot?#iefix) format('embedded-opentype'),
+    url(/assets/font/woff/NotoSansKR-Thin-Hestia.woff) format('woff'),
+    url(/assets/font/otf/NotoSansKR-Thin-Hestia.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Noto Sans Korean';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Noto Sans Light'), local('NotoSans-Light'),
+    url(/assets/font/eot/NotoSansKR-Light-Hestia.eot),
+    url(/assets/font/eot/NotoSansKR-Light-Hestia.eot?#iefix) format('embedded-opentype'),
+    url(/assets/font/woff/NotoSansKR-Light-Hestia.woff) format('woff'),
+    url(/assets/font/otf/NotoSansKR-Light-Hestia.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Noto Sans Korean';
+    font-style: normal;
+    font-weight: 350;
+    src: local('Noto Sans DemiLight'), local('NotoSans-DemiLight'),
+    url(/assets/font/eot/NotoSansKR-DemiLight-Hestia.eot),
+    url(/assets/font/eot/NotoSansKR-DemiLight-Hestia.eot?#iefix) format('embedded-opentype'),
+    url(/assets/font/woff/NotoSansKR-DemiLight-Hestia.woff) format('woff'),
+    url(/assets/font/otf/NotoSansKR-DemiLight-Hestia.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Noto Sans Korean';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Noto Sans Regular'), local('NotoSans-Regular'),
+    url(/assets/font/eot/NotoSansKR-Regular-Hestia.eot),
+    url(/assets/font/eot/NotoSansKR-Regular-Hestia.eot?#iefix) format('embedded-opentype'),
+    url(/assets/font/woff/NotoSansKR-Regular-Hestia.woff) format('woff'),
+    url(/assets/font/otf/NotoSansKR-Regular-Hestia.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Noto Sans Korean';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Noto Sans Medium'), local('NotoSans-Medium'),
+    url(/assets/font/eot/NotoSansKR-Medium-Hestia.eot),
+    url(/assets/font/eot/NotoSansKR-Medium-Hestia.eot?#iefix) format('embedded-opentype'),
+    url(/assets/font/woff/NotoSansKR-Medium-Hestia.woff) format('woff'),
+    url(/assets/font/otf/NotoSansKR-Medium-Hestia.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Noto Sans Korean';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Noto Sans Bold'), local('NotoSans-Bold'),
+    url(/assets/font/eot/NotoSansKR-Bold-Hestia.eot),
+    url(/assets/font/eot/NotoSansKR-Bold-Hestia.eot?#iefix) format('embedded-opentype'),
+    url(/assets/font/woff/NotoSansKR-Bold-Hestia.woff) format('woff'),
+    url(/assets/font/otf/NotoSansKR-Bold-Hestia.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Noto Sans Korean';
+    font-style: normal;
+    font-weight: 900;
+    src: local('Noto Sans Black'), local('NotoSans-Black'),
+    url(/assets/font/eot/NotoSansKR-Black-Hestia.eot),
+    url(/assets/font/eot/NotoSansKR-Black-Hestia.eot?#iefix) format('embedded-opentype'),
+    url(/assets/font/woff/NotoSansKR-Black-Hestia.woff) format('woff'),
+    url(/assets/font/otf/NotoSansKR-Black-Hestia.otf) format('opentype');
+} */

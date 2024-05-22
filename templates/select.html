@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+<h3 align="left">입금을 진행할</h3>
+<h3 align="left">암호화폐를 선택해주세요.</h3>
+                <div class="cust_list">
+                    {% for coin in coins %}
+                    <dl class="card" onclick="location.href='/deposit/{{coin[3]}}';" style="cursor: pointer;">
+                        <dt>
+                            <div class="row">
+                                <img src="{{ url_for('static', filename='img/' + coin[0]) }}" alt="Example Image" style="    padding-top: 5px;">
+                                
+                                <ul class="double-text">
+                                    <li>{{coin[1]}}</li>
+                                    
+                                    <li style="font-size: 11px; opacity: 0.5;">보유 수량</li>
+                                    <li></li>  
+                                </ul>
+                                <div class="single-text">
+                                    {{coin[2]}} {{coin[3]}}
+                                </div>
+                            </div>
+                        </dt>
+                    </dl>
+                    {% endfor %}
+{% endblock %}

@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="format-detection" content="telephone=no" />
+<meta content="text/html; charset=UTF-8" http-equiv="content-type">
+<meta name="description" content="toe,toentoe" />
+<meta name="keywords" content="toe,toentoe" />
+<title>Sample Holder</title>
+
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" />
+<link rel="stylesheet" href="{{ url_for('static', filename='css/font.css') }}" />
+<link rel="stylesheet" href="{{ url_for('static', filename='css/area.css') }}" />
+<link rel="stylesheet" href="{{ url_for('static', filename='css/common.css') }}" />
+<link rel="stylesheet" href="{{ url_for('static', filename='css/jquery-ui.1.8.13.css') }}" />
+
+
+<script src="{{ url_for('static', filename='js/modernizr-custom.js') }}"></script>
+
+
+
+<script src="{{ url_for('static', filename='js/swiper.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+</head>
+<body class="main">
+    <div class="wrap">
+    
+
+
+        <div class="content">
+
+        {% block content %}
+        {% endblock %}
+
+    </body>
+</html>
